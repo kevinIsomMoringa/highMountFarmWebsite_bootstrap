@@ -17,8 +17,8 @@ function retrieveFiles(prefix,folDer){
     while (files.hasNext()) {
       let file = files.next();
       let fileName = file.getName();
-      fileDetails.push(prefix+' '+fileName)
-      Logger.log(prefix+' '+fileName);
+      fileDetails.push(`${prefix}_${fileName}`)
+      Logger.log(`${prefix}_${fileName}`);
   }
   if (fileDetails.length > 0) {return fileDetails}
 }
