@@ -1,7 +1,9 @@
-// let workSheetID =
+const workSheetID = "1EFwe7fr6qQ5qEi65dj1sSoeIKuDE5G4Zj_ycPD5s2lw"
 
 function json(sheetName) {
-    const spreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+    const spreadsheet = SpreadsheetApp.openById(workSheetID);
+    Logger.log(spreadsheet.getName());
+    //SpreadsheetApp.getActiveSpreadsheet()
     const sheet = spreadsheet.getSheetByName(sheetName)
     const data = sheet.getDataRange().getValues()
     const jsonData = convertToJson(data)
