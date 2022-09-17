@@ -85,3 +85,17 @@
     display: none;
 }
 
+#btn {
+    position: relative; width: 100px;height:30px; top: 450px; left: 60px;
+    border-radius: 25px ;
+    background-color: burlywood;
+    color: #000;
+    box-shadow: 100px;
+    z-index: 7;
+}
+.txt {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
