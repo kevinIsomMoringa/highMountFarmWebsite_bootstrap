@@ -47,7 +47,7 @@
 
 ## Authors Info
 * LinkedIn - [Kevin Isom](https://www.linkedin.com/in/kevin-isom-a58bb3201/)
-* Gmail - [Murithi Kibata](#)
+* Gmail - [Murithi Kibata](kibatamuriithi@mail.com)
 
 **[Go Back to the top](#high-mount-farm)**
 
