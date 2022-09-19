@@ -41,7 +41,6 @@ let arrows = function (slides, prevButton, nextButton, index) {
 
 }
 
-
 nextButton.addEventListener("click", function (event){
     let currentSlide = track.querySelector(".current-slide")
     let nextSlide = currentSlide.nextElementSibling
@@ -51,9 +50,6 @@ nextButton.addEventListener("click", function (event){
     moveToSlide(track, currentSlide, nextSlide)
     updateDots(currentDot, nextDot)
     arrows(slides, prevButton, nextButton, nextIndex)
-   
-
-
 })
 
 prevButton.addEventListener("click", function (event){
@@ -68,15 +64,15 @@ prevButton.addEventListener("click", function (event){
 })
 
 nav.addEventListener('click', function (e){
-   let targetDot = e.target.closest("button")
-   //console.log(e.target)
-   if(!targetDot) return
-   let currentSlide = track.querySelector(".current-slide")
-   let currentDot = nav.querySelector(".current-slide")
-   let index = selectors.findIndex(dot => dot === targetDot)
-   let targetSlide= slides[index]
-   moveToSlide(track, currentSlide, targetSlide)
-updateDots(currentDot, targetDot)
-arrows(slides, prevButton, nextButton, index)
+    let targetDot = e.target.closest("button")
+    //console.log(e.target)
+    if(!targetDot) return
+    let currentSlide = track.querySelector(".current-slide")
+    let currentDot = nav.querySelector(".current-slide")
+    let index = selectors.findIndex(dot => dot === targetDot)
+    let targetSlide= slides[index]
+    moveToSlide(track, currentSlide, targetSlide)
+    updateDots(currentDot, targetDot)
+    arrows(slides, prevButton, nextButton, index)
 
 })
